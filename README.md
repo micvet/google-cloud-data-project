@@ -16,7 +16,7 @@ O projeto é composto por:
 
 * Orquestração: O Cloud Composer (Airflow) aciona as funções diariamente, realizando o ordenamento e o controle de sucesso/falha;
 
-* Chatbot: Um chatbot foi criado utilizando o Dialog Flow (Agent Builder) e sua ferramenta de Playbooks, permitindo interação natural com o usuário. Quando o usuário realiza questionamentos sobre os asteroides, é enviada uma requisição API para um função hospedada no Cloud Functions, contruída com o objetivo de buscar a resposta consultando a nossa base de dados no BigQuery. A resposta é então enviada para o Playbook, que a transmite em linguagem acessível para o usuário;
+* Chatbot: Um chatbot foi criado utilizando o Dialogflow (Agent Builder) e sua ferramenta de Playbooks, permitindo uma interação natural com o usuário. Quando o usuário realiza questionamentos sobre os asteroides, uma requisição à API é enviada para uma função hospedada no Cloud Functions, construída com o objetivo de buscar a resposta consultando nossa base de dados com informações sobre os asteroides, no BigQuery. A resposta é então enviada para o Playbook, que a transmite em linguagem acessível ao usuário;
 
 * Processamento do questionamento do usuário final: função no Cloud Functions que recebe perguntas do usuário realizadas em interações com o ChatBot construído no Dialog Flow, utiliza Vertex AI para interpretar o questionamento e gerar queries para o BigQuery, executa as consultas e com o resultado obtido, utiliza novamente o Vertex AI para transcrever a resposta para uma linguagem amigável;
 
