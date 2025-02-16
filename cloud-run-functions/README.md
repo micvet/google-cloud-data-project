@@ -24,7 +24,7 @@ TRANSFORMED_BUCKET=meu-bucket-transformed
 BQ_DATASET=asteroids_dataset
 ```
 2. Implantar Funções no GCP
-Cada função deve ser implantada manualmente via gcloud. Você pode realizar o upload das pastas e usar o seguinte comando dentro da subpasta correspondente:
+Cada função pode ser implantada manualmente via gcloud. Você pode realizar o upload das pastas e usar o seguinte comando dentro da subpasta correspondente:
 
 ```
 gcloud functions deploy <nome-da-funcao> \
@@ -35,7 +35,7 @@ gcloud functions deploy <nome-da-funcao> \
 ```
 <br>
 
-As funções deste projeto foram provisionadas via front:
+Mas as funções deste projeto foram provisionadas via front. A interface é intuitiva. É necessário copiar o conteúdo dos requirements, do main e criar e configurar o arquivo .env:
 
 1. <br> <img src="https://github.com/user-attachments/assets/64eec587-cf4d-42ba-9b3c-4699251f9415" width="900"/> <br> <br>
 
