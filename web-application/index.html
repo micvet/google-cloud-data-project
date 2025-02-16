@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Assistente</title>
+    
+    <!-- Estilos gerais -->
+    <link rel="stylesheet" href="df-messenger-custom.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        .chatbot-container {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            z-index: 100;
+        }
+
+        df-messenger {
+            --df-messenger-font-color: #000;
+            --df-messenger-font-family: "Google Sans", sans-serif;
+            --df-messenger-chat-background: #f3f6fc;
+            --df-messenger-message-user-background: #d3e3fd;
+            --df-messenger-message-bot-background: #fff;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Embed do Canva -->
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%; 
+                padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
+                margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                border-radius: 8px; will-change: transform;">
+        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; 
+                top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                src=<!-- FORNECIDO PELO CANVA EM CONTA PESSOAL. CRIE UM DESING DE PÁGINA WEB E PUBLIQUE. SERÁ FORNCECIDO UM EMBED PARA SER UTILIZADO NA SUA APLICAÇÃO WEB -->
+                allowfullscreen>
+        </iframe>
+    </div>
+    <a href=<!-- FORNECIDO PELO CANVA EM CONTA PESSOAL. CRIE UM DESING DE PÁGINA WEB E PUBLIQUE. SERÁ FORNCECIDO UM EMBED PARA SER UTILIZADO NA SUA APLICAÇÃO WEB -->
+       target="_blank" rel="noopener">
+    </a>
+
+    <!-- Contêiner do chatbot -->
+    <div class="chatbot-container" id="chat-container"></div>
+
+    <!-- Carregamento assíncrono do chatbot. ESSE EMBED É INTEIRAMENTE FORNECIDO PELO DIALOG FLOW CX E É PESSOAL. O CÓDIGO NÃO IRÁ FUNCIONAR SEM UM EMBED PRÓPRIO  -->
+    <script async defer src="<!-- FORNECIDO PELO DIALOG FLOW CX EM CONTA PESSOAL. CRIE UM CHATBOT E EM INTEGRAÇÕES, SELECIONE A INTEGRAÇÃO DE CONVERSATIONAL MESSENGER. SERÁ FORNECIDO UM EMBED PARA UTILIZAÇÃO -->"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let chatBot = document.createElement("df-messenger");
+            chatBot.setAttribute("location", "SUA LOCALIZAÇÃO");
+            chatBot.setAttribute("project-id", "SEU PROJECT ID");
+            chatBot.setAttribute("agent-id", "SEU AGENT ID");
+            chatBot.setAttribute("language-code", "pt-br");
+
+            let chatBubble = document.createElement("df-messenger-chat-bubble");
+            chatBubble.setAttribute("chat-title", "Au-Stronauta");
+
+            chatBot.appendChild(chatBubble);
+            document.getElementById("chat-container").appendChild(chatBot);
+        });
+    </script>
+
+</body>
+</html>
