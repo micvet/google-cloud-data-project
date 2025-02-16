@@ -10,6 +10,7 @@ Este diretório contém a configuração do Cloud Composer, serviço gerenciado 
 ## Configuração
 
 ### Via command line: 
+Antes de configurar o ambiente certifique-se de que modificou o código de execução do DAG, alterando os endpoints com as respectivas URLs das funções do Cloud Functions. 
 
 1. Criar um Ambiente no Cloud Composer pode ser feito via front ou via command line. Via command line: 
 
