@@ -11,8 +11,7 @@ Este diretório contém a configuração do Cloud Composer, serviço gerenciado 
 
 ### Via command line: 
 
-1. Criar um Ambiente no Cloud Composer
-Antes de usar o Composer, é necessário criar um ambiente. Via command line: 
+1. Criar um Ambiente no Cloud Composer pode ser feito via front ou via command line. Via command line: 
 
 ```
 gcloud composer environments create meu-composer \
