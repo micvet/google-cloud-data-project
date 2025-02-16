@@ -1,6 +1,6 @@
 # Dialog Flow - Chatbot - Asteroid Assistant
 
-Este diretório contém os arquivos relacionados ao chatbot baseado no Dialogflow, responsável por interagir com os usuários e fornecer informações sobre asteroides próximos à Terra.
+Este diretório contém os arquivos relacionados ao chatbot contruído no Dialogflow, responsável por interagir com os usuários e fornecer informações sobre asteroides próximos à Terra.
 
 ## Estrutura
 - exported_agent_asteroide-chatbot.blob → Arquivo exportado do agente Dialogflow.
