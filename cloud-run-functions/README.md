@@ -7,7 +7,7 @@ Este diretório contém as funções do Google Cloud Functions que executam o pi
 Recentemente, o Google Cloud Functions foi atualizado e agora está integrado ao Cloud Run.  
 Isso pode exigir ajustes no código para compatibilidade. <br>
 
-Se você for utilizar este repositório, revise a documentação do Cloud Run e ajuste conforme necessário. :rocket: <br>
+Se você for utilizar este repositório, revise a documentação do Cloud Run e ajuste o código conforme necessário. :rocket: <br>
 
 ## Estrutura das Funções
 
