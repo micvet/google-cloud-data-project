@@ -2,6 +2,13 @@
 
 Este diretório contém as funções do Google Cloud Functions que executam o pipeline de dados do projeto. Elas são responsáveis pela coleta, transformação, armazenamento e por fim, consulta dos dados sobre asteroides.
 
+# Importante :rotating_light: Atualização do Cloud Functions para Cloud Run  
+
+Recentemente, o Google Cloud Functions foi atualizado e agora está integrado ao Cloud Run.  
+Isso pode exigir ajustes no código para compatibilidade. <br>
+
+Se você for utilizar este repositório, revise a documentação do Cloud Run e ajuste conforme necessário. :rocket: <br>
+
 ## Estrutura das Funções
 
 Cada subpasta representa uma função específica e contém:
